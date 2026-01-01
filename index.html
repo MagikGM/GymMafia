@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Mafia</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="imagenes/Favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <a href="index.html"><img src="imagenes/Logo.png" alt="Gym Mafia Logo"/></a>
+      </div>
+      <nav class="nav-links">
+        <a href="#header">Inicio</a>
+        <a href="#finder">Sucursales</a>
+        <a href="#planes">Planes</a>
+        <a href="#tienda">Tienda</a>
+      </nav>
+      <div class="user-actions">
+        <a href="#" id="auth-modal-trigger"><img class="icono-usuario" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Cuenta"/></a>
+        <a href="#" class="btn-inscribete" data-plan="general">Inscríbete ya</a>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <h1>¡Obtén tu membresía con 30% de descuento este mes!</h1>
+        <p>Tu mejor versión empieza aquí</p>
+        <a href="#inscribete" class="btn-inscribete" data-plan="general">Inscríbete ya</a>
+      </div>
+    </section>
+
+    <section id="finder">
+      <div class="finder-content">
+        <h2>Encuentra tu gym más cercano</h2>
+        <div class="finder-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120377.34601279808!2d-98.91914725427245!3d19.464529998251393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1761884330462!5m2!1ses-419!2smx"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <input type="text" placeholder="Ingresa tu ubicación..." />
+        </div>
+      </div>
+    </section>
+
+    <section id="planes">
+      <h2>Nuestros Planes</h2>
+      <div class="plan-cards">
+        <div class="plan">
+          <h3>Plan Semanal</h3>
+          <p>Ideal para probar. Acceso completo a pesas, cardio y clases grupales.</p>
+          <p><strong>$150 MXN</strong></p>
+          <a href="#inscribete" class="btn-inscribete" data-plan="general">Inscríbete ya</a>
+        </div>
+        <div class="plan">
+          <h3>Plan Mensual</h3>
+          <p>Tu compromiso mensual. Incluye acceso a todas las sucursales y regaderas.</p>
+          <p><strong>$450 MXN</strong></p>
+          <a href="#inscribete" class="btn-inscribete" data-plan="general">Inscríbete ya</a>
+        </div>
+        <div class="plan">
+          <h3>Plan Trimestral</h3>
+          <p>Ahorra más. Acceso total + 1 invitado gratis cada fin de semana.</p>
+          <p><strong>$1200 MXN</strong></p>
+          <a href="#inscribete" class="btn-inscribete" data-plan="general">Inscríbete ya</a>
+        </div>
+        <div class="plan">
+          <h3>Plan Anual</h3>
+          <p>La mejor oferta. Acceso total, 1 invitado siempre y 1 mes de congelación.</p>
+          <p><strong>$4000 MXN</strong></p>
+          <a href="#inscribete" class="btn-inscribete" data-plan="general">Inscríbete ya</a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="tienda">
+      <h2>Tienda Mafia</h2> 
+      <div class="tienda-grid">
+        <a href="ropa.html" style="text-decoration: none; color: inherit;">
+          <div>
+            <img src="imagenes/Ropa.png" alt="Ropa Gym" />
+            <p>Ropa Deportiva</p>
+          </div>
+        </a>
+        <a href="suplementos.html" style="text-decoration: none; color: inherit;">
+          <div>
+            <img src="imagenes/Suplementos.png" alt="Suplementos" />
+            <p>Suplementos</p>
+          </div>
+        </a>
+        <a href="equipamiento.html" style="text-decoration: none; color: inherit;">
+          <div>
+            <img src="imagenes/Equimamiento.png" alt="Equipamiento" />
+            <p>Equipamiento</p>
+          </div>
+        </a>
+        <a href="asesorias.html" style="text-decoration: none; color: inherit;">
+          <div>
+            <img src="imagenes/Asesorias.png" alt="Asesorias" />
+            <p>Asesorias</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="espacios">
+      <h2>Conoce nuestros espacios</h2>
+      <div class="espacios-grid">
+        <div>
+          <img src="imagenes/Area-pesas.jpg" alt="Área de pesas" />
+          <p>Área de pesas</p>
+        </div>
+        <div>
+          <img src="imagenes/Area-cardio.jpg" alt="Área de cardio" />
+          <p>Área de cardio</p>
+        </div>
+        <div>
+          <img src="imagenes/Area-box.png" alt="Area de box" />
+          <p>Area de box</p>
+        </div>
+        <div>
+          <img src="imagenes/Area-vestidores.png" alt="Vestidores" />
+          <p>Vestidores</p>
+        </div>
+        <div>
+          <img src="imagenes/Area-sauna.png" alt="Sauna" />
+          <p>Sauna</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-top">
+        <a href="index.html"><img src="imagenes/Logo.png" class="logo-footer" alt="Logo"/></a>
+        <p>Síguenos</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/mgk.nx/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"/></a>
+          <a href="https://www.youtube.com/@magiknx"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Youtube"/></a>
+          <a href="https://x.com/magxk_24"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"/></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-col">
+          <a href="#">Quiénes somos</a>
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">Contacto</a>
+          <a href="#">Ayuda</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- --------------------------------- -->
+    <!-- --- HTML DEL MODAL DE INSCRIPCIÓN --- -->
+    <!-- --------------------------------- -->
+    <div class="modal-overlay" id="inscripcion-modal">
+      <div class="modal-content">
+        <span class="modal-close" id="modal-close-btn">&times;</span>
+
+        <!-- Formulario (Visible por defecto) -->
+        <form id="inscripcion-form">
+          <h2>Elige tu Plan</h2>
+          <p>Al confirmar, se vinculará a tu cuenta actual.</p>
+          
+          <div class="form-group">
+            <label for="plan-select">Plan Elegido:</label>
+            <select id="plan-select" name="plan">
+              <option value="general">Selecciona un plan...</option>
+              <option value="semanal">Plan Semanal ($150)</option>
+              <option value="mensual">Plan Mensual ($450)</option>
+              <option value="trimestral">Plan Trimestral ($1200)</option>
+              <option value="anual">Plan Anual ($4000)</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit-btn">Confirmar Inscripción</button>
+        </form>
+
+        <!-- Mensaje de Éxito (Oculto por defecto) -->
+        <div id="form-success-message" style="display: none; text-align: center; padding: 20px">
+          <h3 style="color: #28a745; margin-top: 0">¡Inscripción Exitosa!</h3>
+          
+          <p style="font-size: 1.1rem; margin-bottom: 10px;">
+            Hemos vinculado este plan a tu cuenta correctamente.
+          </p>
+          
+          <p style="color: #555; margin-bottom: 20px;">
+            Ya puedes disfrutar de los beneficios. Puedes consultar la vigencia y detalles en tu perfil.
+          </p>
+          
+          <button onclick="window.location.href='cuenta.html'" class="form-submit-btn" style="margin-top: 10px; background-color: #000; color: #FFD700;">
+            Ir a mi Perfil
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------------- -->
+    <!-- --- NUEVO: HTML DEL MODAL DE LOGIN/REGISTRO --- -->
+    <!-- --------------------------------- -->
+    <div class="modal-overlay" id="auth-modal">
+      <div class="modal-content">
+        <span class="modal-close" id="auth-modal-close-btn">&times;</span>
+
+        <!-- Vista de Login (Visible por defecto) -->
+        <div id="login-view">
+          <form id="login-form">
+            <h2>Iniciar Sesión</h2>
+            
+            <p id="login-message" style="color: red; display: none; text-align: center; font-weight: bold;"></p>
+            
+            <div class="form-group">
+              <label for="login-email">Correo Electrónico:</label>
+              <input type="email" id="login-email" name="login-email" required/>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Contraseña:</label>
+              <input type="password" id="login-password" name="login-password" required/>
+            </div>
+            <button type="submit" class="form-submit-btn">Entrar</button>
+            <p class="form-switch-link">¿No tienes cuenta? <a id="show-register-view">Regístrate</a></p>
+          </form>
+        </div>
+
+        <!-- Vista de Registro (Oculta por defecto) -->
+        <div id="register-view" style="display: none">
+          <form id="register-form">
+            <h2>Crear Cuenta</h2>
+            <div class="form-group">
+              <label for="register-nombre">Nombre Completo:</label>
+              <input type="text" id="register-nombre" name="register-nombre" required/>
+            </div>
+            <div class="form-group">
+              <label for="register-email">Correo Electrónico:</label>
+              <input type="email" id="register-email" name="register-email" required/>
+            </div>
+            <div class="form-group">
+              <label for="register-password">Contraseña:</label>
+              <input type="password" id="register-password" name="register-password" required/>
+            </div>
+            <div class="form-group">
+              <label for="register-confirm-password">Confirmar Contraseña:</label>
+              <input type="password" id="register-confirm-password" name="register-confirm-password" required/>
+            </div>
+            <button type="submit" class="form-submit-btn">Registrarse</button>
+            <p class="form-switch-link">¿Ya tienes una cuenta? <a id="show-login-view">Inicia sesión</a>
+            </p>
+          </form>
+        </div>
+
+        <!-- Vista de Éxito (Oculta) -->
+        <div id="auth-success-message" style="display: none; text-align: center; padding: 20px">
+          <h3 style="color: #28a745; margin-top: 0">¡Listo!</h3>
+          <p>Acción completada con éxito.</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

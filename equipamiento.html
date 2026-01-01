@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipamiento - Gym Mafia</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="imagenes/Favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    
+    <header id="header">
+      <div class="logo">
+        <a href="index.html"><img src="imagenes/Logo.png" alt="Gym Mafia Logo"/></a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#header">Inicio</a>
+        <a href="index.html#finder">Sucursales</a>
+        <a href="index.html#planes">Planes</a>
+        <a href="index.html#tienda">Tienda</a>
+      </nav>
+      <div class="user-actions">
+        <a href="#" id="auth-modal-trigger"><img class="icono-usuario" src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Cuenta"/></a>
+        <a href="#" class="btn-inscribete" data-plan="general">Inscríbete ya</a>
+      </div>
+    </header>
+
+    <section class="catalogo-seccion">
+        <h1>Equipamiento y Accesorios</h1>
+        
+        <div class="catalogo-grid">
+            
+            <div class="producto-card">
+                <img src="imagenes/Producto-cinturon.jpg" alt="Cinturón Gym">
+                <div class="card-info">
+                    <h3>Cinturón de Levantamiento (Cuero)</h3>
+                    <span class="card-precio">$850.00 MXN</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/Producto-straps.jpg" alt="Straps">
+                <div class="card-info">
+                    <h3>Straps de Agarre (Par)</h3>
+                    <span class="card-precio">$250.00 MXN</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/Producto-ligas.jpg" alt="Ligas">
+                <div class="card-info">
+                    <h3>Set de Ligas de Resistencia</h3>
+                    <span class="card-precio">$350.00 MXN</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/Producto-tapete.jpg" alt="Tapete Yoga">
+                <div class="card-info">
+                    <h3>Tapete Antideslizante Mafia</h3>
+                    <span class="card-precio">$400.00 MXN</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/Producto-rodilleras.jpg" alt="Rodilleras">
+                <div class="card-info">
+                    <h3>Rodilleras de Neopreno (7mm)</h3>
+                    <span class="card-precio">$600.00 MXN</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/Producto-mochila.jpg" alt="Mochila Gym">
+                <div class="card-info">
+                    <h3>Mochila Táctica Gym Mafia</h3>
+                    <span class="card-precio">$1,200.00 MXN</span>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-top">
+        <a href="index.html"><img src="imagenes/Logo.png" class="logo-footer" alt="Logo"/></a>
+        <p>Síguenos</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/mgk.nx/"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"/></a>
+          <a href="https://www.youtube.com/@magiknx"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Youtube"/></a>
+          <a href="https://x.com/magxk_24"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"/></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-col">
+          <a href="#">Quiénes somos</a>
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">Contacto</a>
+          <a href="#">Ayuda</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- --------------------------------- -->
+    <!-- --- HTML DEL MODAL DE INSCRIPCIÓN --- -->
+    <!-- --------------------------------- -->
+    <div class="modal-overlay" id="inscripcion-modal">
+      <div class="modal-content">
+        <span class="modal-close" id="modal-close-btn">&times;</span>
+
+        <!-- Formulario (Visible por defecto) -->
+        <form id="inscripcion-form">
+          <h2>Elige tu Plan</h2>
+          <p>Al confirmar, se vinculará a tu cuenta actual.</p>
+          
+          <div class="form-group">
+            <label for="plan-select">Plan Elegido:</label>
+            <select id="plan-select" name="plan">
+              <option value="general">Selecciona un plan...</option>
+              <option value="semanal">Plan Semanal ($150)</option>
+              <option value="mensual">Plan Mensual ($450)</option>
+              <option value="trimestral">Plan Trimestral ($1200)</option>
+              <option value="anual">Plan Anual ($4000)</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit-btn">Confirmar Inscripción</button>
+        </form>
+
+        <!-- Mensaje de Éxito (Oculto por defecto) -->
+        <div id="form-success-message" style="display: none; text-align: center; padding: 20px">
+          <h3 style="color: #28a745; margin-top: 0">¡Inscripción Exitosa!</h3>
+          
+          <p style="font-size: 1.1rem; margin-bottom: 10px;">
+            Hemos vinculado este plan a tu cuenta correctamente.
+          </p>
+          
+          <p style="color: #555; margin-bottom: 20px;">
+            Ya puedes disfrutar de los beneficios. Puedes consultar la vigencia y detalles en tu perfil.
+          </p>
+          
+          <button onclick="window.location.href='cuenta.html'" class="form-submit-btn" style="margin-top: 10px; background-color: #000; color: #FFD700;">
+            Ir a mi Perfil
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------------- -->
+    <!-- --- NUEVO: HTML DEL MODAL DE LOGIN/REGISTRO --- -->
+    <!-- --------------------------------- -->
+    <div class="modal-overlay" id="auth-modal">
+      <div class="modal-content">
+        <span class="modal-close" id="auth-modal-close-btn">&times;</span>
+
+        <!-- Vista de Login (Visible por defecto) -->
+        <div id="login-view">
+          <form id="login-form">
+            <h2>Iniciar Sesión</h2>
+            
+            <p id="login-message" style="color: red; display: none; text-align: center; font-weight: bold;"></p>
+            
+            <div class="form-group">
+              <label for="login-email">Correo Electrónico:</label>
+              <input type="email" id="login-email" name="login-email" required/>
+            </div>
+            <div class="form-group">
+              <label for="login-password">Contraseña:</label>
+              <input type="password" id="login-password" name="login-password" required/>
+            </div>
+            <button type="submit" class="form-submit-btn">Entrar</button>
+            <p class="form-switch-link">¿No tienes cuenta? <a id="show-register-view">Regístrate</a></p>
+          </form>
+        </div>
+
+        <!-- Vista de Registro (Oculta por defecto) -->
+        <div id="register-view" style="display: none">
+          <form id="register-form">
+            <h2>Crear Cuenta</h2>
+            <div class="form-group">
+              <label for="register-nombre">Nombre Completo:</label>
+              <input type="text" id="register-nombre" name="register-nombre" required/>
+            </div>
+            <div class="form-group">
+              <label for="register-email">Correo Electrónico:</label>
+              <input type="email" id="register-email" name="register-email" required/>
+            </div>
+            <div class="form-group">
+              <label for="register-password">Contraseña:</label>
+              <input type="password" id="register-password" name="register-password" required/>
+            </div>
+            <div class="form-group">
+              <label for="register-confirm-password">Confirmar Contraseña:</label>
+              <input type="password" id="register-confirm-password" name="register-confirm-password" required/>
+            </div>
+            <button type="submit" class="form-submit-btn">Registrarse</button>
+            <p class="form-switch-link">¿Ya tienes una cuenta? <a id="show-login-view">Inicia sesión</a>
+            </p>
+          </form>
+        </div>
+
+        <!-- Vista de Éxito (Oculta) -->
+        <div id="auth-success-message" style="display: none; text-align: center; padding: 20px">
+          <h3 style="color: #28a745; margin-top: 0">¡Listo!</h3>
+          <p>Acción completada con éxito.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

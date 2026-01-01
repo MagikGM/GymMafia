@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrador - Gym Mafia</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="imagenes/Favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/Logo.png" alt="Gym Mafia Logo"/></a>
+        </div>
+        <button id="admin-logout" class="btn-inscribete" style="background: white;">Salir</button>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#finder">Sucursales</a>
+            <a href="index.html#planes">Planes</a>
+            <a href="index.html#tienda">Tienda</a>
+        </nav>
+        </header>
+
+    <section class="cuenta-seccion">
+        <div class="cuenta-container" style="max-width: 1000px;">
+            <div class="cuenta-header">
+                <h1>Gestión de Usuarios</h1>
+                <p>Control total de la base de datos</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Plan Activo</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-users-body">
+                        </tbody>
+                </table>
+            </div>
+            
+            <div id="admin-empty-msg" style="display:none; margin-top:20px; color: #777;">
+                No hay usuarios registrados en la base de datos local.
+            </div>
+
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
